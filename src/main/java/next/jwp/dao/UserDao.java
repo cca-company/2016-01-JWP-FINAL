@@ -21,7 +21,7 @@ public class UserDao {
     private NamedParameterJdbcTemplate jdbcTemplate;
 
     public User insert(User user) {
-        String sql = "INSERT INTO USERS (userId, name, password) VALUES (:userId, :name, :password)";
+        String sql = "INSERT INTO USERS (userId, name, password, pic) VALUES (:userId, :name, :password, :pic)";
         SqlParameterSource namedParameters = new BeanPropertySqlParameterSource(user);
         KeyHolder holder = new GeneratedKeyHolder();
         jdbcTemplate.update(sql, namedParameters, holder);
