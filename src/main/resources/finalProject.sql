@@ -98,3 +98,9 @@ INSERT INTO HISTORY (issueId, writerId, type, content, date) VALUES(4,1,'changed
 INSERT INTO HISTORY (issueId, writerId, type, content, date) VALUES(4,2,'comment','comment new issue!',CURRENT_TIMESTAMP);
 INSERT INTO HISTORY (issueId, writerId, type, content, date) VALUES(4,3,'file','upload file',CURRENT_TIMESTAMP);
 
+INSERT INTO LABEL (labelText) VALUES('label1');
+INSERT INTO LABEL (labelText) VALUES('label2');
+INSERT INTO LABEL (labelText) VALUES('label3');
+INSERT INTO LABEL (labelText) VALUES('label4');
+INSERT INTO LABEL (labelText) VALUES('label5');
+
